@@ -1,0 +1,17 @@
+.JobList {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 100%;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.rounded-block {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 25px;
+  display: flex;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,5 @@
+.Header {
+  height: 90px;
+  background: hsl(180, 29%, 50%) url("/images/bg-header-desktop.svg") center;
+  /* background-size: cover; */
+}
