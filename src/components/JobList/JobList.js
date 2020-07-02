@@ -3,19 +3,19 @@ import FilterBar from "./FilterBar/FilterBar";
 import JobCard from "./JobCard/JobCard";
 import jobsList from "../../data.json";
 import { store } from "../../store/store";
+import { REMOVE_FILTER, CLEAR_FILTERS } from "../../constants/actionTypes";
 import "./JobList.css";
 
 function JobList() {
   const { state, dispatch } = useContext(store);
   const { filters } = state;
-  // jobList;
 
   const handleFilterRemove = (filter) => {
-    dispatch({ type: "REMOVE_FILTER", payload: filter });
+    dispatch({ type: REMOVE_FILTER, payload: filter });
   };
 
   const handleFiltersClear = () => {
-    dispatch({ type: "CLEAR_FILTERS" });
+    dispatch({ type: CLEAR_FILTERS });
   };
 
   return (

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Button, Badge } from "../../shared";
 import { store } from "../../../store/store";
+import { ADD_FILTER } from "../../../constants/actionTypes";
 import "./JobCard.scss";
 
 function JobCard({ job }) {
@@ -15,7 +16,7 @@ function JobCard({ job }) {
 
   const handleFilterClick = (filter) => {
     if (!filters.includes(filter))
-      dispatch({ type: "ADD_FILTER", payload: filter });
+      dispatch({ type: ADD_FILTER, payload: filter });
   };
 
   return (
