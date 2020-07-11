@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import classNames from "classnames";
 import { Button, Badge } from "../../shared";
 import { store } from "../../../store/store";
 import { ADD_FILTER } from "../../../constants/actionTypes";
@@ -20,7 +21,11 @@ function JobCard({ job }) {
   };
 
   return (
-    <div className="JobCard rounded-block">
+    <div
+      className={classNames("JobCard rounded-block", {
+        "JobCard--featured": job.featured,
+      })}
+    >
       <div className="JobCard__description">
         <img src={job.logo} className="JobCard__image" alt="" />
         <div className="JobCard__content">
